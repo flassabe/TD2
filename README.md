@@ -31,7 +31,7 @@ AP = {"00:13:ce:95:e1:6f": AccessPoint("00:13:ce:95:e1:6f", 4.93, 25.81, 3.55, 2
 In this part, you have to compute the FBCM index given a distance between a transmitter and a receiver, and its RSSISample.
 
 ```python
-def compute_FBCM_index(distance: float, rssi_values: RSSISample) -> float:
+def compute_FBCM_index(distance: float, rssi_values: RSSISample, ap: AccessPoint) -> float:
 	"""
     Function compute_FBCM_index computes a FBCM index based on the distance (between transmitter and receiver)
     and the AP parameters. We consider the mobile device's antenna gain is 2.1 dBi.
